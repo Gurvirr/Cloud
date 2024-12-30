@@ -14,7 +14,10 @@
       {
         "title": "Cloud",
         "width": 1000,
-        "height": 600
+        "height": 600,
+        "resizable": true,
+        "decorations": false,
+        "transparent": false
       }
     ],
     "security": {
