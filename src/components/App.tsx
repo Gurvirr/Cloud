@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import TitleBar from "./TitleBar.tsx";
-import "/src/styles/app.modules.css";
+import styles from "/src/styles/app.module.css";
     
 function App() {
 const [greetMsg, setGreetMsg] = useState("");
@@ -13,25 +13,25 @@ const [greetMsg, setGreetMsg] = useState("");
     }
 
     return (
-        <main className="container">
-            <TitleBar /> {/* TitleBar component */}
+        <main className={styles.container}>
+            <TitleBar />
             <h1>Cloud, the lightweight rich-text editor.</h1>
 
-            <div className="row">
+            <div className={styles.row}>
                 <a href="https://vitejs.dev" target="_blank">
-                    <img src="/Cloud.png" className="logo vite" alt="Vite logo" />
+                    <img src="/Cloud.png" className={`${styles.logo} ${styles.vite}`} alt="Vite logo" />
                 </a>
                 <a href="https://tauri.app" target="_blank">
-                    <img src="/Cloud.png" className="logo tauri" alt="Tauri logo" />
+                    <img src="/Cloud.png" className={`${styles.logo} ${styles.tauri}`} alt="Tauri logo" />
                 </a>
                 <a href="https://reactjs.org" target="_blank">
-                    <img src="/Cloud.png" className="logo react" alt="React logo" />
+                    <img src="/Cloud.png" className={`${styles.logo} ${styles.react}`} alt="React logo" />
                 </a>
             </div>
             <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
             <form
-                className="row"
+                className={styles.row}
                 onSubmit={(e) => {
                     e.preventDefault();
                     greet();
