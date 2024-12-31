@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
-import "/src/App.css";
+import "/src/styles/app.css";
 
 function App() {
 const [greetMsg, setGreetMsg] = useState("");
