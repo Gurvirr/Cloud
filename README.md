@@ -1,6 +1,6 @@
 # Tauri + React + TypeScript
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/cba45e44-bd16-45b8-85c7-d9811c2c4c04" alt="Fontura" width="400" />
+  <img src="https://github.com/user-attachments/assets/6de06c80-4588-4940-bce7-f4d4ebd7d155" alt="Cloud" width="400" />
 </div>
 This template should help get you started developing with Tauri, React and Typescript in Vite.
 
