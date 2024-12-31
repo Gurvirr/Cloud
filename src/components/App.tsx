@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
-import "/src/styles/app.css";
-
+import TitleBar from "./TitleBar.tsx";
+import "/src/styles/app.modules.css";
+    
 function App() {
 const [greetMsg, setGreetMsg] = useState("");
     const [name, setName] = useState("");
@@ -13,6 +14,7 @@ const [greetMsg, setGreetMsg] = useState("");
 
     return (
         <main className="container">
+            <TitleBar /> {/* TitleBar component */}
             <h1>Cloud, the lightweight rich-text editor.</h1>
 
             <div className="row">

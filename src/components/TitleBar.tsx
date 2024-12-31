@@ -1,4 +1,4 @@
-import "/src/app.css";
+import styles from "/src/styles/title-bar.modules.css";
 
 function TitleBar() {
     return (
@@ -6,6 +6,6 @@ function TitleBar() {
             <h1> Cloud </h1>
         </header>
     );
-}
+}   
 
 export default TitleBar;
